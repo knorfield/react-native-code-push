@@ -4,7 +4,9 @@
   "description": "Plugin Testing Framework for CodePush Plugins",
   "main": "script/index.js",
   "scripts": {
-    "test": "gulp"
+    "test": "gulp",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,8 @@
     "q": "^1.4.1",
     "replace": "latest",
     "superagent": "^3.8.3",
-    "superagent-proxy": "^1.0.0"
+    "superagent-proxy": "^1.0.0",
+    "snyk": "^1.189.0"
   },
   "bugs": {
     "url": "https://github.com/Microsoft/code-push/issues"
@@ -32,5 +35,6 @@
   "_id": "code-push-plugin-testing-framework@0.0.1",
   "_shasum": "6ea33a661710628af266d714949fe95f88d71f0d",
   "_from": "../code-push/plugin-testing-framework/bin",
-  "_resolved": "file:../code-push/plugin-testing-framework/bin"
+  "_resolved": "file:../code-push/plugin-testing-framework/bin",
+  "snyk": true
 }
