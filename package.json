@@ -22,7 +22,8 @@
     "hoist-non-react-statics": "^2.3.1",
     "inquirer": "1.1.2",
     "plist": "3.0.1",
-    "xcode": "1.0.0"
+    "xcode": "1.0.0",
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "archiver": "latest",
@@ -58,5 +59,10 @@
     "commands": {
       "postlink": "node node_modules/react-native-code-push/scripts/postlink/run"
     }
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
